@@ -27,7 +27,9 @@ app.use('/submission',submitRouter);
 app.use('/ai',aiRouter);
 app.use("/video",videoRouter);
 
-
+app.get('/apitesting',(req,res)=>{
+    res.send("This is testing api")
+})
 const InitalizeConnection = async ()=>{
     try{
 
